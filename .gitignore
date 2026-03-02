@@ -1,0 +1,17 @@
+# Dependencias
+node_modules/
+
+# Variables de entorno (contiene la contraseña — nunca subir a Git)
+.env
+
+# Base de datos SQLite (los datos reales)
+data/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+.vercel
+.env*.local
+
+# Local Netlify folder
+.netlify

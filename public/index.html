@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>predyye la carta fallida</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Encabezado clásico -->
+  <header>
+    <h1>predyye la carta fallida</h1>
+    <p><em>reseña de todo y para todos</em></p>
+  </header>
+
+  <hr>
+
+  <!-- Botón de acción principal -->
+  <div class="actions">
+    <button id="btn-add">Escribir Nota</button>
+  </div>
+
+  <!-- Zona de autenticación (oculta por defecto) -->
+  <div id="auth-section" class="hidden auth-box">
+    <label for="input-password"><strong>Contraseña del autor:</strong></label>
+    <div class="input-row">
+      <input type="password" id="input-password" placeholder="******">
+      <button id="btn-confirm-password">Entrar</button>
+      <button id="btn-cancel-modal">Cancelar</button>
+    </div>
+    <div id="password-error" class="hidden warning-box">contraseña incorrecta jijieja</div>
+  </div>
+
+  <!-- Formulario de nota (oculto por defecto) -->
+  <div id="form-section" class="hidden form-box">
+    <h3>Redactar nueva nota</h3>
+    <textarea id="note-content" placeholder="Escribe aquí tu mensaje..."></textarea>
+    <br>
+    <button id="btn-publish">Nota Publicada</button>
+    <button id="btn-cancel-form">Descartar</button>
+    <div id="publish-error" class="hidden warning-box">Error al conectar con la base de datos.</div>
+  </div>
+
+  <hr>
+
+  <!-- Muro de notas -->
+  <main id="notes-container">
+    <p id="loading-text"><i>Cargando entradas del servidor...</i></p>
+  </main>
+
+  <hr>
+
+  <footer>
+    <p>&#169; 2026 predyye.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

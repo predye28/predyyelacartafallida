@@ -1,0 +1,14 @@
+{
+  "name": "predyye-la-carta-fallida",
+  "version": "1.0.0",
+  "description": "Una web donde publicar notas/cartas de forma privada y leerlas públicamente.",
+  "scripts": {
+    "dev": "netlify dev",
+    "build": "echo 'No build step required'"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5"
+  }
+}
